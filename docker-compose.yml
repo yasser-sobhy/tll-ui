@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  app:
+    build: ./
+    command: npm start
+    volumes:
+      - .:/app
+    ports:
+      - 3002:3000
+    stdin_open: true
